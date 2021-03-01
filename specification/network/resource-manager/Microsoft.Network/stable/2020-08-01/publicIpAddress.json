@@ -64,14 +64,14 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "Request successful. Resource does not exist."
+          "200": {
+            "description": "Delete successful."
           },
           "202": {
             "description": "Accepted and the operation will complete asynchronously."
           },
-          "200": {
-            "description": "Delete successful."
+          "204": {
+            "description": "Request successful. Resource does not exist."
           },
           "default": {
             "description": "Error response describing why the operation failed.",
@@ -83,6 +83,9 @@
         "x-ms-examples": {
           "Delete public IP address": {
             "$ref": "./examples/PublicIpAddressDelete.json"
+          },
+          "PublicIPAddresses_Delete_Generated_10": {
+            "$ref": "./examples/PublicIPAddresses_Delete_Generated_10.json"
           }
         },
         "x-ms-long-running-operation": true,
@@ -142,6 +145,9 @@
         "x-ms-examples": {
           "Get public IP address": {
             "$ref": "./examples/PublicIpAddressGet.json"
+          },
+          "PublicIPAddresses_Get_Generated_8": {
+            "$ref": "./examples/PublicIPAddresses_Get_Generated_8.json"
           }
         }
       },
@@ -183,14 +189,14 @@
           }
         ],
         "responses": {
-          "201": {
-            "description": "Create successful. The operation returns the resulting PublicIPAddress resource.",
+          "200": {
+            "description": "Update successful. The operation returns the resulting PublicIPAddress resource.",
             "schema": {
               "$ref": "#/definitions/PublicIPAddress"
             }
           },
-          "200": {
-            "description": "Update successful. The operation returns the resulting PublicIPAddress resource.",
+          "201": {
+            "description": "Create successful. The operation returns the resulting PublicIPAddress resource.",
             "schema": {
               "$ref": "#/definitions/PublicIPAddress"
             }
@@ -211,6 +217,12 @@
           },
           "Create public IP address DNS": {
             "$ref": "./examples/PublicIpAddressCreateDns.json"
+          },
+          "PublicIPAddresses_CreateOrUpdate_Generated_1": {
+            "$ref": "./examples/PublicIPAddresses_CreateOrUpdate_Generated_1.json"
+          },
+          "PublicIPAddresses_CreateOrUpdate_Generated_3": {
+            "$ref": "./examples/PublicIPAddresses_CreateOrUpdate_Generated_3.json"
           }
         },
         "x-ms-long-running-operation": true,
@@ -354,6 +366,12 @@
         "x-ms-examples": {
           "List resource group public IP addresses": {
             "$ref": "./examples/PublicIpAddressList.json"
+          },
+          "PublicIPAddresses_List_Generated_6": {
+            "$ref": "./examples/PublicIPAddresses_List_Generated_6.json"
+          },
+          "PublicIPAddresses_List_Generated_12": {
+            "$ref": "./examples/PublicIPAddresses_List_Generated_12.json"
           }
         },
         "x-ms-pageable": {
